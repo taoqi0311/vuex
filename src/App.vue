@@ -1,28 +1,25 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+  <div >
+    <p>clicked{{count}}times,count is{{isEvenOdd}}</p>
+    <button>+</button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return {count:0,}
+  },
+  computed(){
+1
   }
+
+
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
